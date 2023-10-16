@@ -1,0 +1,1 @@
+export const uncompressed = (url) => url.replace(/\?.*$/, '')
