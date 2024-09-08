@@ -8,6 +8,9 @@
 	// Repeating Content
 	import TextImage from "$lib/modules-flex/paragraphs/text-image/text-image.svelte"
 	import ImageFullWidth from "$lib/modules-flex/images/image-full-width/image-full-width.svelte"
+  //video alper
+  import Video from "$lib/modules-flex/images/video/image-full-width.svelte"
+
 	import ImageFullScreen from "$lib/modules-flex/images/image-full-screen/image-full-screen.svelte"
 	import SliderComplex from '$lib/modules-flex/sliders/slider-complex/slider-complex.svelte'
   import SliderVideoFullInfo from '$lib/modules-flex/sliders/slider-video-full-info/slider-video-full-info.svelte'
@@ -54,6 +57,7 @@
 		paragraph_richtext_big: ParagraphRichtextBig,
 		paragraph_richtext_small: ParagraphRichtextSmall,
 		image_full_width: ImageFullWidth,
+    video: Video,
 		image_full_screen: ImageFullScreen,
 		slider_complex: SliderComplex,
 		slider_video_full_info: SliderVideoFullInfo,
