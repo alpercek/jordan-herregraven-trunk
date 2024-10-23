@@ -33,19 +33,19 @@
 	} else {
 		// Use data from the slices module
 		image = slice.primary.video
-		videoUrl = image.url + '#t=0.001'
+		videoUrl = image.url + '#t=10.001'
     zoom = isFilled.image(slice.primary.zoom_image) ? slice.primary.zoom_image : false
 		caption = slice.primary.caption
 		hasRichtext = true // Define id the slices module caption is a richtext (Default: true)
 	}
 </script>
 
-<div class="w-full {!$page.params.page || 'px-4 sm:px-0'}" class:max-w-sm={maxWidth}>
+<div class="w-full {!$page.params.page || ''}" class:max-w-2xl={maxWidth}>
 	<!-- Display image basic comp -->
   <div class="w-full" class:zoom>
     {#if !inSlider}
       <!-- <Image src={image} classesOuter="w-full" /> -->
-    <video src={videoUrl} class="w-full" playsinline controls></video>
+    <video src={videoUrl} class="w-full" playsinline controls onplay='if(this.currentTime == 10.001)this.currentTime = 0'></video>
     {:else}
     <!--  <img src={image.url} alt={image.alt}> -->
     {/if}
